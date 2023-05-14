@@ -7,7 +7,7 @@ import EditarAlunos from "./pages/EditarAlunos";
 
 
 
-function RoutesApp(){
+const RoutesApp = () => {
     return(
         <BrowserRouter>
         <Header />
