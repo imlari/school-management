@@ -68,12 +68,12 @@ function EditarAlunos(){
                     </select>
                     <h3>Vencimento</h3>
                     <input type='text' value={vencimento} onChange={(e) => setVencimento(e.target.value)}/>
-                    <button onClick={ editarInformacoes }>Editar</button>
+                    <button /* onClick={ editarInformacoes } */>Editar</button>
                  </div>
                  :
                  ''
                 }
-                <button onClick={ pesquisarAluno }>Pesquisar</button>
+                <button /* onClick={ pesquisarAluno } */>Pesquisar</button>
             </div>
     );
 }
