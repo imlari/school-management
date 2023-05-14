@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { FcHome } from "react-icons/fc";
 import './styles.js'
 import { AddStudentsContainer, AddStudentsButton, AddStudentsInput, SelectStudents } from "./styles.js";
-import api from "../../services/index.js";
+import api from "../../services";
 import { toast } from "react-toastify";
 
 
