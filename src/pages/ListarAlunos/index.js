@@ -1,4 +1,4 @@
-import firebase from '../../firebaseConnection';
+
 import React, {useState, useEffect} from 'react';
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
@@ -11,7 +11,7 @@ function ListarAlunos(){
 
 
 
-    useEffect(() =>{
+ /*    useEffect(() =>{
 
         async function loadLista(){
 
@@ -49,7 +49,7 @@ function ListarAlunos(){
     }
 
 
-
+ */
 
     return(
         <div className='container-lista'>
@@ -62,7 +62,7 @@ function ListarAlunos(){
                             <span>Idade: {element.idade}</span><br/>
                             <span>Plano: {element.plano}</span><br/>
                             <span>Vencimento: {element.vencimento}</span><br/>
-                            <button onClick={() => excluirAluno(element.id)}>Excluir Aluno</button>
+                            <button /* onClick={() => excluirAluno(element.id) */>Excluir Aluno</button>
                         </li>
                     );
                 })}

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { toast } from 'react-toastify';
-import firebase from '../../firebaseConnection';
 import './editarAlunos.css'
 
 
@@ -14,7 +13,7 @@ function EditarAlunos(){
     const [vencimento, setVencimento] = useState('');
     const [informacoes, setInformacoes] = useState(false)
 
-    async function pesquisarAluno(){
+    /* async function pesquisarAluno(){
 
         await firebase.firestore().collection('alunos').doc(matricula)
         .get()
@@ -47,7 +46,7 @@ function EditarAlunos(){
             setVencimento('');
             setNome('');
         }).catch(() => toast.warn('ERROR'))
-    }
+    } */
 
 
     return(

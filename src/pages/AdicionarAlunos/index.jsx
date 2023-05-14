@@ -1,5 +1,4 @@
 import React,{ useState } from "react";
-import firebase from '../../firebaseConnection';
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 import { FcHome } from "react-icons/fc";
@@ -16,7 +15,7 @@ function AdicionarAlunos(){
     const navigate = useNavigate();
 
 
-    async function handleAdd(){
+    /* async function handleAdd(){
 
         if(nomeAluno === '' || idadeAluno === '' ){
             return toast.warn('Preencha todos os campos!');
@@ -34,7 +33,7 @@ function AdicionarAlunos(){
             setPlano('');
             navigate('/', { replace: true})
         }).catch(() => toast.warn('Erro ao cadastrar o usuario!'))
-    }
+    } */
 
     function goHome(){
         navigate('/', { replace: true})
@@ -53,7 +52,7 @@ function AdicionarAlunos(){
             <option>Mensal</option>
             <option>Trimestral</option>
         </SelectStudents>
-        <AddStudentsButton onClick={ handleAdd }>Adicionar Aluno</AddStudentsButton>
+        <AddStudentsButton /* onClick={ handleAdd } */>Adicionar Aluno</AddStudentsButton>
         <AddStudentsButton onClick={ goHome } className='btn-home'><FcHome/>Home</AddStudentsButton>
     </AddStudentsContainer>
    );
