@@ -10,8 +10,7 @@ const Home = () => {
     <div className="container-home">
       <div className="box">
         <p>
-          {" "}
-          <FcConferenceCall className="icons" />{" "}
+          <FcConferenceCall className="icons" />
         </p>
         <Link to="/adicionarAlunos" className="btn btn-add">
           Adicionar Aluno
